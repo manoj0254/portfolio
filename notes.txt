@@ -1,0 +1,86 @@
+Installed react in the current directory
+----------------------------------------
+c:\>npm create vite@latest . --template react
+
+Select a framework:  React
+-------------------
+Select a variant: JavaScript
+-----------------
+
+intalled and run npm
+--------------------
+c:\>npm install
+c:\>npm run dev
+
+http://localhost:5173/
+
+
+===============================================
+
+
+Install Tailwind CSS through vite
+---------------------------------
+npm install tailwindcss @tailwindcss/vite
+
+Configure the Vite plugin inside vite.config.ts
+-----------------------------------------------
+  import: import tailwindcss from '@tailwindcss/vite'
+  -------
+  plugins: plugins: [react(), tailwindcss()],
+  --------
+
+Import Tailwind CSS
+-------------------
+Deleted all the content in index.css
+Added following @import to index.css: @import "tailwindcss";
+
+
+===========================================================
+
+
+App.jsx
+-------
+Cleared all content
+Written new component code.
+
+pasted the following code in return function
+	<h1 class="text-3xl font-bold underline">
+    	   Hello world!
+	</h1>
+
+
+Delete some files
+-----------------
+src > App.css
+src > assets > react.svg
+public > vite.svg
+
+Run the app
+-----------
+npm run dev
+
+
+==========================
+Installing Animcation on Scroll
+==========================
+C:\> npm install aos
+
+imported the following in app.jsx
+---------------------------------------
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+added the following inthe const App
+-------------------------------------------
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000,
+    });
+  },[])
+
+
+
+==========================
+Installing React Icons
+==========================
+C:\> npm install react-icons

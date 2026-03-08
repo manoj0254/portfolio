@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
+.site-primary{color:rgb(97, 95, 255);}
+.site-primary-bg{color:rgb(97, 95, 255);}
