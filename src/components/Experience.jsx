@@ -139,7 +139,7 @@ const Experience = () => {
                                             <h3 className="text-xl font-semibold text-slate-800 mb-1"><span className='text-gray-500'>{comapny.id}</span>{'. '+comapny.name}</h3>
                                             <p className="text-slate-600 font-medium mb-3">{comapny.role}</p>
                                         </header>
-                                        <p className="text-gray-600 mb-4">{comapny.bio}</p>
+                                        {/* <p className="text-gray-600 mb-4">{comapny.bio}</p> */}
                                         <ul className="flex">
                                             {comapny.specialties.map((spec, i)=>(
                                             <li key={i}>
